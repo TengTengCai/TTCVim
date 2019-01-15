@@ -9,6 +9,10 @@ Plug 'scrooloose/nerdtree' " 项目目录树
 Plug 'morhetz/gruvbox'  " vim主题
 Plug 'vim-airline/vim-airline'  " 窗口底部状态栏
 Plug 'vim-airline/vim-airline-themes' " 窗口底部状态栏主题
+Plug 'davidhalter/jedi-vim'  " Python代码自动补全
+Plug 'ervandew/supertab'  " 代码补全tab按钮
+Plug 'tell-k/vim-autopep8'  " PEP8代码检测 autopep8是必须的包
+Plug 'airblade/vim-gitgutter'  " 展示Git修改的不同之处
 " Initialize plugin system
 call plug#end()
 
@@ -44,6 +48,15 @@ let g:airline#extensions#tabline#left_alt_sep = '|'  " 左边的警示间隔标�
 let g:airline#extensions#tabline#formatter = 'default'
 
 let g:airline_theme='dark'
+
+" ==============================
+" jedi-vim Python代码补全
+
+" ==============================
+" vim-autopep8配置
+let g:autopep8_disable_show_diff=1  " 不用展示不同只处  
+let g:autopep8_on_save = 1  " 每次保持自动格式化pep8
+
 " ==============================
 " The Keyboard Map
 
