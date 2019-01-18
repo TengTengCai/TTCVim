@@ -5,7 +5,9 @@ set number
 call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
+" Plug 'rhysd/vim-healthcheck' " 健康检查插件
 Plug 'scrooloose/nerdtree' " 项目目录树
+Plug 'Xuyuanp/nerdtree-git-plugin'  " 目录树git状态
 Plug 'morhetz/gruvbox'  " vim主题
 Plug 'vim-airline/vim-airline'  " 窗口底部状态栏
 Plug 'vim-airline/vim-airline-themes' " 窗口底部状态栏主题
